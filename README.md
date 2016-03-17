@@ -1,6 +1,8 @@
 # Indiana Joan
 PostCSS tools for your next exciting adventure.
 
+![Indiana Joan](https://raw.githubusercontent.com/DocWatson/indiana-joan/master/logo/joan.png)
+
 ## What is this?
 There are some really cool PostCSS tools out there. Joan is a module that pulls
 together a few existing libraries to make CSS a breeze. Essentially, Joan is a
