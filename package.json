@@ -1,6 +1,6 @@
 {
   "name": "indiana-joan",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "PostCSS tools for your next exciting adventure.",
   "main": "src/index.js",
   "scripts": {

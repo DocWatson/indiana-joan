@@ -16,8 +16,6 @@ native `clear: fix`.
 * [Lost]() - a really nice grid system based on calc (or flexbox)
 
 ## Installation and Usage
-Right now, Joan has only been tested to work with Gulp. Incorporating her into
-other build systems should be easy, and instructions will come soon.
 
 ### Gulp
 From the command line: `npm install gulp gulp-postcss indiana-joan`
@@ -39,6 +37,34 @@ gulp.task('css', function(){
 });
 
 gulp.task('default', ['css']);
+```
+
+### Grunt
+From the command line: `npm install grunt grunt-postcss indiana-joan`
+
+```
+// sample Gruntfile.js
+
+module.exports = function(grunt){
+  grunt.initConfig({
+    postcss: {
+      options: {
+        processors: [
+          require('indiana-joan')()
+        ]
+      },
+      dist: {
+        src: './src/*.css',
+        dest: './dest/style.css'
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-postcss');
+
+  grunt.registerTask('default', ['postcss']);
+};
+
 ```
 
 ## Contributing, Thanks, and Other Notes
