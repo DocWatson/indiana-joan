@@ -174,7 +174,6 @@ section .logo {
 
 ```
 
-
 ## Contributing, Thanks, and Other Notes
 Contributors are welcome to open pull requests with new features, stability/code
 improvements, and tests.
